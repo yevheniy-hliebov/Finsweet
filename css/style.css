@@ -12,6 +12,10 @@ body{
     min-height: 100vh;
     display:flex; 
     flex-direction:column;
+    color: #232536;
+}
+body a{
+    color: #232536;
 }
 
 body.lock{
@@ -82,15 +86,24 @@ main{ flex:1; }
     .container{
         max-width: 1540px;
     }
+    .maxw-less-1{
+        max-width: 780px;
+    }
 }
 @media screen and (max-width: 1560px){
     .container{
         max-width: 1200px;
     }
+    .maxw-less-1{
+        max-width: 780px;
+    }
 }
 @media screen and (max-width: 1200px){
     .container{
         max-width: 970px;
+    }
+    .maxw-less-1{
+        max-width: 780px;
     }
 }
 @media screen and (max-width: 992px){
