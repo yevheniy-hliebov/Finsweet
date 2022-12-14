@@ -1,0 +1,14 @@
+.header{
+    width: 100%;
+    background-color: #232536;
+}
+
+.header .container{
+    min-height: 80px;
+}
+
+.header .container, .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

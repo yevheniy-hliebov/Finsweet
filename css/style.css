@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter&family=Sen:wght@400;700&display=swap');
 body{
     font-family: 'Sen', sans-serif;
 }
@@ -6,4 +6,65 @@ body{
 .container{
     max-width: 1277px;
     margin: 0 auto;
+}
+
+body{ 
+    min-height: 100vh;
+    display:flex; 
+    flex-direction:column;
+}
+main{ flex:1; }
+
+.logo{
+    height: 28px;
+    width: auto;
+}
+
+.navbar_item{
+    float: left;
+    margin-left: 24px;
+    padding: 3px 0;
+}
+.navbar_item:first-child{
+    margin-left: 0;
+}
+.navbar_item:hover{
+    padding: 3px 0 2px;
+    border-bottom: 1px solid #EDC14A;
+}
+.navbar_item:hover .navbar_link{
+    color: #EDC14A;
+}
+
+.navbar_link{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.btn{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #232536;
+    cursor: pointer;
+
+    padding: 16px 48px;
+}
+
+.btn--white{
+    margin-left: 32px;
+    background-color: #fff;
+}
+.btn--yellow{
+    background-color: #FFD050;
+}
+
+.btn--white:hover{
+    background-color: #F4F0F8;
+}
+.btn--yellow:hover{
+    background-color: #EDC14A;
 }

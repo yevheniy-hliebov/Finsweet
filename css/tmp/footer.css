@@ -1,0 +1,81 @@
+.footer{
+    width: 100%;
+    background-color: #232536;
+}
+
+.footer .container{
+    padding: 56px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 56px;
+}
+
+.main-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta__text{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #fff;
+}
+
+.cta__form{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    gap: 24px;
+}
+
+.cta__email{
+    padding: 14px 25px;
+    border: 1px solid #4C4C4C;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+.cta__email::placeholder{
+    color: #6D6E76;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.contacts__links a{
+    margin-left: 26px;
+}
+.contacts__links a:first-child{
+    margin: 0;
+}
+.contacts__links--icon{
+    height: 16px;
+    width: auto;
+}
