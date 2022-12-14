@@ -38,7 +38,6 @@
 .cta__form{
     display: flex;
     align-items: center;
-    margin-left: 24px;
     gap: 24px;
 }
 
@@ -78,4 +77,42 @@
 .contacts__links--icon{
     height: 16px;
     width: auto;
+}
+
+/*-------------------------------
+    BREAKPOINT FOR RESPONSIVE 
+-------------------------------*/
+@media screen and (max-width: 992px){
+    .cta{
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding:42px
+    }
+    .cta__text{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 520px){
+    .cta__form{
+        flex-direction: column;
+    }
+    .footer .navbar__item{
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+    .contacts{
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+}
+@media screen and (max-width: 650px){
+    .main-links{
+        flex-direction: column;
+    }
+    .main-links .logo{
+        margin-bottom: 24px;
+    }
 }

@@ -13,6 +13,11 @@ body{
     display:flex; 
     flex-direction:column;
 }
+
+body.lock{
+    overflow: hidden;
+}
+
 main{ flex:1; }
 
 .logo{
@@ -20,28 +25,27 @@ main{ flex:1; }
     width: auto;
 }
 
-.navbar_item{
+.navbar__item{
     float: left;
-    margin-left: 24px;
-    padding: 3px 0;
+    margin-left: 24px; 
 }
-.navbar_item:first-child{
+.navbar__item:first-child{
     margin-left: 0;
 }
-.navbar_item:hover{
-    padding: 3px 0 2px;
-    border-bottom: 1px solid #EDC14A;
-}
-.navbar_item:hover .navbar_link{
-    color: #EDC14A;
-}
 
-.navbar_link{
+.navbar__link{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     color: #fff;
+    padding: 3px 0;
+}
+
+.navbar__item:hover .navbar__link{
+    color: #EDC14A;
+    padding: 3px 0 2px;
+    border-bottom: 1px solid #EDC14A;
 }
 
 .btn{
@@ -67,4 +71,36 @@ main{ flex:1; }
 }
 .btn--yellow:hover{
     background-color: #EDC14A;
+}
+
+
+
+/*-------------------------------
+    BREAKPOINT FOR CONTAINER 
+-------------------------------*/
+@media screen and (max-width: 1740px){
+    .container{
+        max-width: 1540px;
+    }
+}
+@media screen and (max-width: 1560px){
+    .container{
+        max-width: 1200px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+}
+@media screen and (max-width: 767px){
+    .container{
+        max-width: none;
+        margin: 0 20px;
+    }
 }
