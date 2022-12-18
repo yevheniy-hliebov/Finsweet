@@ -1,0 +1,100 @@
+.dropdown-btn-form{
+    width: 200px;
+    position: relative;
+}
+
+.dropdown-btn-form__btn{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    margin: 0;
+    background-color: #fff;
+    text-align: left;
+    padding: 8px 40px 8px 24px;
+    border: 1px solid #000;
+    /* border-radius: 5px; */
+    outline: none;
+    cursor: pointer;
+}
+
+.dropdown-btn-form__btn::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform-origin: center;
+    transform: translateY(-50%);
+    width: 12px;
+	height: 8px;
+    
+    transition: transform 0.5s ease-in;
+    background-image: url(../../img/arrow.svg);
+    background-repeat: no-repeat;
+}
+
+.dropdown-btn-form__btn.active::after{
+    transform: rotate(180deg) translateY(50%);
+}
+
+.dropdown-btn-form__list{
+    position: absolute;
+    top: 35px;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgb(141, 167, 255);
+    overflow: hidden;
+    overflow-y: scroll;
+
+    border-radius: 2px;
+    width: 100%;
+
+    max-height: 0;
+    visibility: hidden;
+    transition: 0.3s all ease-in;
+}
+
+.dropdown-btn-form__list::-webkit-scrollbar{
+    display: none;
+}
+
+.dropdown-btn-form__list.active{
+    max-height: 250px;
+    visibility: visible;
+}
+
+.dropdown-btn-form__list-item{
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid rgb(141, 167, 255);
+    border-right: 1px solid rgb(141, 167, 255);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 8px 35px 8px 25px;
+    cursor: pointer;
+}
+
+.dropdown-btn-form__list-item:first-child{
+    border-top: 0px;
+    border-radius: 2px 2px 0 0;
+}
+.dropdown-btn-form__list-item:last-child{
+    border-bottom: 0px;
+    border-radius: 0 0 2px 2px;
+}
+
+.dropdown-btn-form__list-item.active{
+    background-color: rgb(235, 232, 255);
+}
+
+.dropdown-btn-form__btn:focus, .dropdown-btn-form__btn.active{
+    border-color: rgb(141, 167, 255);
+}
+
+.dropdown-btn-form__list-item:hover{
+    background-color: rgb(224, 224, 224);
+}
