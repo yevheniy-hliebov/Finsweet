@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter&family=Sen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sen:wght@400;700&display=swap');
 
 .container{
     max-width: 1277px;
@@ -120,36 +120,24 @@ p {
     BREAKPOINT FOR CONTAINER 
 -------------------------------*/
 @media screen and (max-width: 1740px){
-    .container{
-        max-width: 1540px;
-    }
-    .maxw-less-1{
-        max-width: 780px;
-    }
+    .container{ max-width: 1540px; }
+    .maxw-less-1{ max-width: 780px; }
+    .maxw-less-2{ max-width: 1024px; }
 }
 @media screen and (max-width: 1560px){
-    .container{
-        max-width: 1200px;
-    }
-    .maxw-less-1{
-        max-width: 780px;
-    }
+    .container{ max-width: 1200px; }
+    .maxw-less-1{ max-width: 780px; }
+    .maxw-less-2{ max-width: 1024px; }
 }
 @media screen and (max-width: 1200px){
-    .container{
-        max-width: 970px;
-    }
-    .maxw-less-1{
-        max-width: 780px;
-    }
+    .container{ max-width: 970px; }
+    .maxw-less-1{ max-width: 780px; }
 }
 @media screen and (max-width: 992px){
-    .container{
-        max-width: 750px;
-    }
+    .container{ max-width: 750px; }
 }
 @media screen and (max-width: 767px){
-    .container{
+    .container{ 
         max-width: none;
         margin: 0 20px;
     }

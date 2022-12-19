@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/tmp/header.css">
-    <link rel="stylesheet" href="../css/tmp/dropdown.css">
-    <link rel="stylesheet" href="../css/pages/contact.css">
+    <link rel="stylesheet" href="../css/pages/author.css">
     <link rel="stylesheet" href="../css/tmp/footer.css">
 
-    <title>Finsweet - Contact Us</title>
+    <title>Finsweet - Some Author</title>
 </head>
 <body>
     <!-- HEADER -->
@@ -37,50 +36,56 @@
 
     <!-- MAIN -->
     <main class="content">
-        <div class="container maxw-less-1">
-            <section class="content__header">
-                <h6 class="content__header__title--page">Contact us</h6>
-                <h1 class="content__header__title">Let’s Start a Conversation</h1>
-                <p class="content__header__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-            </section>
-            <section class="content__info">
-                <div class="content__info__block">
-                    <h6 class="content__info__title">Working hours</h6>
-                    <hr class="content__info__line">
-                    <h5 class="content__info__time">
-                        Monday To Friday
-                        <br>
-                        9:00 AM to 8:00 PM 
-                    </h5>
-                    <p class="content__info__text">Our Support Team is available 24/7</p>
+        <section class="content__header__author">
+            <div class="container maxw-less-2">
+                <div class="author__wrapper">
+                    <div href="" class="author__profile-img">
+                        <img src="../img/user-profile-img/author_1.png" alt="profile-img">
+                    </div>
+                    <div class="author__description-block">
+                        <h1 class="author__title">Hey there, I’m Andrew Jonhson and welcome to my Blog</h1>
+                        <p class="author__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+                        <div class="author__links">
+                            <a href=""><img src="../img/social-icons/icon-facebook.svg" alt="facebook" class="author__links--icon"></a>
+                            <a href=""><img src="../img/social-icons/icon-twitter.svg" alt="twitter" class="author__links--icon"></a>
+                            <a href=""><img src="../img/social-icons/icon-instagram.svg" alt="instagram" class="author__links--icon"></a>
+                            <a href=""><img src="../img/social-icons/icon-linkedin.svg" alt="linkedin" class="author__links--icon"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="content__info__block">
-                    <h6 class="content__info__title">Contact Us</h6>
-                    <hr class="content__info__line">
-                    <h5 class="content__info__phone-number">
-                        020 7993 2905
-                    </h5>
-                    <p class="content__info__text">hello@finsweet.com</p>
+                <div class="author__pattern">
+                    <hr class="author__pattern__line--yellow">
+                    <hr class="author__pattern__line--purple">
                 </div>
-            </section>
+            </div>
+        </section>
+        <section class="content__author-posts">
+            <div class="container maxw-less-2">
+                <h2 class="content__author-posts__title">My Posts</h2>
+                
+                <div class="posts__wrapper">
+                    <figure class="posts__item">
+                        <a href="" class="posts__image"><img src="../img/posts-img/post-image-1.png" alt=""></a>
+                        <div class="posts__description-block">
+                            <a href="" class="posts__category">Business</a>
+                            <h2 class="posts__title">Font sizes in UI design: The complete guide to follow</h2>
+                            <figcaption class="posts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+                        </div>
+                    </figure>
+                    <figure class="posts__item">
+                        <a href="" class="posts__image"><img src="../img/posts-img/post-image-2.png" alt=""></a>
+                        <div class="posts__description-block">
+                            <a href="" class="posts__category">Economy</a>
+                            <h2 class="posts__title">How to build rapport with your web design clients</h2>
+                            <figcaption class="posts__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+                        </div>
+                    </figure>
 
-            <form class="content__form" action="" method="post">
-                <input type="text" name="full_name" class="content__form__input--name" placeholder="Full Name">
-                <input type="email" name="email" class="content__form__input--email" placeholder="Your Email">
-                <div class="dropdown-btn-form">
-                    <button class="dropdown-btn-form__btn">Query Related</button>
-                    <ul class="dropdown-btn-form__list">
-                        <li class="dropdown-btn-form__list-item" data-value="startup">Startup</li>
-                        <li class="dropdown-btn-form__list-item" data-value="business">Business</li>
-                        <li class="dropdown-btn-form__list-item" data-value="economy">Economy</li>
-                        <li class="dropdown-btn-form__list-item" data-value="technology">Technology</li>
-                    </ul>
-                    <input class="dropdown-btn-form__value" type="number" name="text" value="" style="display: none;">
+                    <!-- if there are still elements -->
+                    <button class="btn btn--yellow btn--load-more">Load More</button>
                 </div>
-                <textarea name="message" class="content__form__message" placeholder="Message"></textarea>
-                <button type="submit" class="btn btn--yellow content__form__btn">Send Message</button>
-            </form>
-        </div>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
@@ -120,6 +125,5 @@
     </footer>
 
     <script src="../js/main.js"></script>
-    <script src="../js/dropdown.js"></script>
 </body>
 </html>
