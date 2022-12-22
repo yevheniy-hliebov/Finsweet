@@ -13,6 +13,7 @@ body{
     color: #232536;
 }
 body a{
+    font-family: 'Sen', sans-serif; 
     color: #232536;
 }
 
@@ -143,19 +144,22 @@ p {
 
 .list-authors{ margin: 128px 0; }
 
-.list-authors__title{
+.list-authors__title,
+.list-category__title{
     text-align: center;
     margin-bottom: 48px;
 }
 
-.list-authors__cards{
+.list-authors__cards,
+.list-category__cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
 }
 
-.list-authors__cards__item{ display: flex; }
+.list-authors__cards__item,
+.list-category__cards__item { display: flex; }
 
 .list-author__card{
     background-color: #F4F4F4;
@@ -184,12 +188,58 @@ p {
 
 .list-author__card .contacts__links a{ margin-left: 16px; }
 
+.all-posts__links-pagination{
+    margin: 64px 0;
+    text-align: center;
+}
+.all-posts__links-pagination a{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #232536;
+}
+.all-posts__links-pagination a.links-pagination--lock{
+    color: #6D6E76;
+}
+.all-posts__links-pagination--prev{
+    margin-right: 17px;
+}
+
+
 @media screen and (max-width: 590px){
     .list-authors__cards{
         max-height: 500px;
         overflow: hidden;
         overflow-y: scroll;
     }
+}
+
+.list-category{
+    margin-bottom: 128px;
+}
+
+.list-category__cards__item{
+    max-width: 296px;
+}
+.list-category__card{
+    padding: 32px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #d3d4d6;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-category__card__title{
+    margin: 16px 0 4px;
+}
+
+.list-category__card:hover{
+    background-color: #FFD050;
+    border: 1px solid #FFD050;
 }
 
 /*-------------------------------
