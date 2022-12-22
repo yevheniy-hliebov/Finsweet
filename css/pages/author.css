@@ -34,27 +34,6 @@
 
 .author__links a:first-child{ margin-left: 0; }
 
-.author__pattern{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-.author__pattern__line--yellow{
-    width: 75%;
-    border: 12px solid #FFD050;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-.author__pattern__line--purple{
-    width: 25%;
-    border: 12px solid #592EA9;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-
 .content__author-posts{ padding: 128px 0; }
 
 .content__author-posts__title {margin-bottom: 64px;}

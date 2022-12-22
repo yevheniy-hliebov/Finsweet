@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sen:wght@400;700&display=swap');
 
 .container{
-    max-width: 1277px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -58,7 +58,6 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #4C4C4C;
 }
 
 .logo{
@@ -114,10 +113,87 @@ p {
     background-color: #EDC14A;
 }
 
+.pattern{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.pattern__line--yellow{
+    width: 75%;
+    border: 12px solid #FFD050;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.pattern__line--purple{
+    width: 25%;
+    border: 12px solid #592EA9;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.join-to-team{
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto 128px;
+}
+
+.join-to-team__description{ margin: 16px 0 32px; }
+
+.list-authors{ margin: 128px 0; }
+
+.list-authors__title{
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.list-authors__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.list-authors__cards__item{ display: flex; }
+
+.list-author__card{
+    background-color: #F4F4F4;
+    padding: 40px 28px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-author__card:hover{ background-color: #FBF6EA; }
+
+.list-authors__card__img{ margin: 0 auto 20px; }
+
+.list-authors__card__img img{
+    display: block;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.list-author__card .contacts__links{ margin-top: 20px; }
+
+.list-author__card .contacts__links a{ margin-left: 16px; }
+
+@media screen and (max-width: 590px){
+    .list-authors__cards{
+        max-height: 500px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
 
 /*-------------------------------
-    BREAKPOINT FOR CONTAINER 
+    BREAKPOINTS FOR CONTAINER 
 -------------------------------*/
 @media screen and (max-width: 1740px){
     .container{ max-width: 1540px; }
