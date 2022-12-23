@@ -205,6 +205,13 @@ p {
     margin-right: 17px;
 }
 
+.all-posts__links-pagination--prev::before{
+    content: '< ';
+}
+.all-posts__links-pagination--next::after{
+    content: ' >';
+}
+
 
 @media screen and (max-width: 590px){
     .list-authors__cards{
@@ -226,11 +233,29 @@ p {
     text-align: left;
     background-color: #fff;
     border: 1px solid #d3d4d6;
+    position: relative;
 
     display: flex;
     flex-direction: column;
     text-align: center;
     overflow: hidden;
+}
+
+.list-category__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.list-category__card__img {
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #FBF6EA;
 }
 
 .list-category__card__title{
@@ -240,6 +265,10 @@ p {
 .list-category__card:hover{
     background-color: #FFD050;
     border: 1px solid #FFD050;
+}
+
+.link-name{
+    color: #592EA9;
 }
 
 /*-------------------------------
