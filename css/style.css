@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sen:wght@400;700&display=swap');
 
 .container{
-    max-width: 1280px;
+    max-width: 1740px;
     margin: 0 auto;
 }
 
@@ -291,7 +291,7 @@ p {
 @media screen and (max-width: 992px){
     .container{ max-width: 750px; }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .container{ 
         max-width: none;
         margin: 0 20px;

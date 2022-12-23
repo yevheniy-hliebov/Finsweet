@@ -1,0 +1,175 @@
+/* ----------------------------------
+    Post Header
+---------------------------------- */
+.post__header {
+    padding: 128px 0 64px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+.post__author {
+    display: flex;
+    align-items: center;
+}
+.post__author__img {
+    width: 50px;
+    height: 50px;
+
+    margin-right: 16px;
+}
+.post__author__img img,
+.post__category__img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+.post__author__img img { border-radius: 50%; }
+.post__author__name {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #592EA9;
+    opacity: 0.87;
+}
+.post__author__date { color: #6D6E76; }
+.post__main-title { margin: 24px 0 34px; }
+.post__category {
+    display: flex;
+    align-items: center;
+}
+.post__category__img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.post__category__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* ----------------------------------
+    Post Header !!! END !!!
+---------------------------------- */
+
+
+/* ----------------------------------
+    Post Header-IMAGE
+---------------------------------- */
+.post__header-img{
+    width: 100%;
+    height: 600px;
+}
+.post__header-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ----------------------------------
+    Post Header-IMAGE !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    Post Content
+---------------------------------- */
+.post__content {
+    margin: 64px auto;
+    max-width: 845px;
+}
+.post__content__title:first-child{ margin-top: 0; }
+.post__content__title{ margin-top: 48px; }
+
+.post__content__paragraph,
+.post__content__list{
+    margin: 12px 0;
+}
+.post__content__list { padding-left: 30px; }
+.post__content__list-item {
+    list-style: disc;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #161722;
+    opacity: 0.78;
+}
+/* ----------------------------------
+    Post Content !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    Post Recommendations
+---------------------------------- */
+.posts-recommendations {
+    border-bottom: 1px solid #6D6E76;
+    margin-bottom: 128px;
+}
+.posts-recommendations__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 64px 32px;
+    margin: 64px 0;
+}
+.posts-recommendations__list-item{
+    display: flex;
+    width: 31%;
+}
+.posts-recommendations__list-item__block {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.posts-recommendations__list-item__img {
+    width: 100%;
+    height: 250px;
+}
+.posts-recommendations__list-item__img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+.posts-recommendations__list-item__text {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.posts-recommendations__list-item__name-date {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4C4C4C;
+}
+
+/* ----------------------------------
+    Post Recommendations !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    MEDIA BREAKPOINTS
+---------------------------------- */
+@media screen and (max-width: 1200px){
+    .posts-recommendations__list-item{ width: 47%; }
+}
+@media screen and (max-width: 992px){
+    .posts-recommendations__list-item{ width: 100%; }
+    .posts-recommendations__list-item__img { height: 400px; }
+    .post__header-img{ height: 300px; }
+}
+@media screen and (max-width: 425px){
+    .posts-recommendations__list-item__img,
+    .post__header-img { height: 200px; }
+}
+/* ----------------------------------
+    MEDIA BREAKPOINTS !!! END !!!
+---------------------------------- */
+
