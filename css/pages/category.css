@@ -1,0 +1,198 @@
+/* ----------------------------------
+    Category Header
+---------------------------------- */
+.content__header{
+    background-color: #F4F0F8;
+}
+.content__header__wrapper {
+    max-width: 515px;
+    padding: 80px 0;
+    margin: 0 auto;
+
+    text-align: center;
+}
+.content__header__desc {
+    margin: 16px 0 32px;
+}
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.breadcrumb__item,
+.breadcrumb__link {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.breadcrumb__link{
+    position: relative;
+}
+
+.breadcrumb__link:hover::before{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid #232536;
+    transition: 0.3s all ease-in;
+}
+
+.breadcrumb__item + .breadcrumb__item::before{
+    content: '>';
+    margin-right: 10px;
+}
+/* ----------------------------------
+    Category Header !!! END !!!
+---------------------------------- */
+
+
+/* ----------------------------------
+    Content Posts
+---------------------------------- */
+.content__posts{
+    padding: 128px 0;
+}
+.content__posts__wraper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 144px;
+}
+/* ----------------------------------
+    Content Posts !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    Filters Block
+---------------------------------- */
+.filters__menu {
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+.filters__title {
+    margin-bottom: 40px;
+}
+.block__filter__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.block__filter__link {
+    display: flex;
+    align-items: center;
+
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #d3d4d6;
+}
+.block__filter__link:hover,
+.block__filter__link--active{
+    background-color: #FFD050;
+    border: 1px solid #FFD050;
+}
+.block__filter__img {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #FBF6EA;
+
+    margin-right: 16px;
+}
+/* ----------------------------------
+    Filters Tags
+---------------------------------- */
+.filters__tags {
+    height: 300px;
+}
+.filters__tags .filters__title {
+    margin-bottom: 24px;
+}
+.filters__tags__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+    justify-content: center;
+}
+.filters__tags__link {
+    display: inline-block;
+    min-width: 120px;
+    padding: 16px 30px;
+    
+    background-color: #fff;
+    border: 2px solid #6D6E76;
+    border-radius: 28px;
+    opacity: 0.7;
+}
+/* ----------------------------------
+    Filter Btn
+---------------------------------- */
+.filter-btn__wraper{
+    display: none;
+    text-align: right;
+}
+.filter-btn{
+    margin: 24px 0 24px auto;
+}
+
+.filter-close{
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.filter-close .line1{
+    transform: translate(0, 4.5px) rotate(-45deg);
+}
+
+.filter-close .line3 {
+    transform: translate(0, -4.5px) rotate(45deg);
+}
+
+/* ----------------------------------
+    Filters Block !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    MEDIA BREAKPOINTS
+---------------------------------- */
+@media screen and (max-width: 992px) {
+    .filters__menu{ 
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: 5;
+        opacity: 0;
+        visibility: hidden;
+        overflow-y: scroll;
+
+        transition: 0.7s min-width ease;
+
+        padding: 55px 15px;
+        background-color: #0e0f16f5;
+        text-align: center;
+    }
+    .filters__menu--active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .filters__menu--active .filter-close{
+        display: block;
+    }
+    .filter-btn__wraper{ display: block; }
+}
+/* ----------------------------------
+    MEDIA BREAKPOINTS !!! END !!!
+---------------------------------- */
