@@ -1,3 +1,5 @@
+@import url('../style.css');
+
 /* ----------------------------------
     Post Header
 ---------------------------------- */
@@ -50,11 +52,9 @@
     font-size: 24px;
     line-height: 32px;
 }
-
 /* ----------------------------------
     Post Header !!! END !!!
 ---------------------------------- */
-
 
 /* ----------------------------------
     Post Header-IMAGE
@@ -70,7 +70,6 @@
     object-fit: cover;
     object-position: center;
 }
-
 /* ----------------------------------
     Post Header-IMAGE !!! END !!!
 ---------------------------------- */
@@ -81,15 +80,23 @@
 .post__content {
     margin: 64px auto;
     max-width: 845px;
-}
-.post__content__title:first-child{ margin-top: 0; }
-.post__content__title{ margin-top: 48px; }
 
-.post__content__paragraph,
-.post__content__list{
-    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
-.post__content__list { padding-left: 30px; }
+
+.post__content__title{ margin-bottom: 16px; }
+
+.post__content__text .post__content__paragraph + .post__content__paragraph{
+    margin-top: 24px;
+}
+
+
+.post__content__list { 
+    margin: 24px 0;
+    padding-left: 30px; 
+}
 .post__content__list-item {
     list-style: disc;
     font-weight: 700;

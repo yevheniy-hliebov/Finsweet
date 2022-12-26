@@ -1,3 +1,5 @@
+@import url('../style.css');
+
 /* ----------------------------------
     Category Header
 ---------------------------------- */
@@ -107,6 +109,11 @@
     background-color: #FBF6EA;
 
     margin-right: 16px;
+}
+.block__filter__name{
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -2px;
 }
 /* ----------------------------------
     Filters Tags

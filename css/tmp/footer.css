@@ -28,10 +28,6 @@
 }
 
 .cta__text{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: -2px;
     color: #fff;
 }
 
@@ -61,9 +57,6 @@
 }
 
 .contacts__text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
     color: #fff;
     opacity: 0.7;
 }

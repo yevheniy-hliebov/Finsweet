@@ -1,3 +1,8 @@
+@import url('../style.css');
+
+/* ----------------------------------
+    About-us Header
+---------------------------------- */
 .about-us__header{
     margin-top: 80px;
     margin-left: 110px;
@@ -32,7 +37,13 @@
     position: relative;
     z-index: 1;
 }
+/* ----------------------------------
+    About-us Header !!! END !!!
+---------------------------------- */
 
+/* ----------------------------------
+    About-us Overview
+---------------------------------- */
 .about-us__overview{
     position: relative;
     top: -63px;
@@ -71,7 +82,13 @@
 .overview__statistic__item__name{
     color: #232536;
 }
+/* ----------------------------------
+    About-us Overview !!! END !!!
+---------------------------------- */
 
+/* ----------------------------------
+    About-us Mision-Vision
+---------------------------------- */
 .about-us__mision-vision{
     padding: 128px 108px 64px;
     display: flex;
@@ -90,7 +107,13 @@
     letter-spacing: -1px;
     margin: 24px 0 16px;
 }
+/* ----------------------------------
+    About-us Mision-Vision !!! END !!!
+---------------------------------- */
 
+/* ----------------------------------
+    About-us Histories
+---------------------------------- */
 .about-us__histories__block {
     display: flex;
     align-items: center;
@@ -147,10 +170,13 @@
     background: #592EA9;
     border-radius: 50%;
 }
+/* ----------------------------------
+    About-us Histories !!! END !!!
+---------------------------------- */
 
-/*---------------------- 
-    MEDIA-BREAKPOINTS 
-----------------------*/
+/* ----------------------------------
+    MEDIA BREAKPOINTS
+---------------------------------- */
 @media screen and (max-width: 1200px){
     .about-us__sub-title{
         font-size: 36px;
@@ -242,3 +268,6 @@
         line-height: 48px;
     }
 }
+/* ----------------------------------
+    MEDIA BREAKPOINTS !!! END !!!
+---------------------------------- */

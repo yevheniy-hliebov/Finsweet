@@ -1,3 +1,9 @@
+@import url('../style.css');
+@import url('../tmp/dropdown.css');
+
+/* ----------------------------------
+    Content
+---------------------------------- */
 .content{
     margin: 128px 0;
 }
@@ -9,9 +15,14 @@
 .content__header__title{
     margin: 12px 0 24px;
 }
+/* ----------------------------------
+    Content !!! END !!!
+---------------------------------- */
 
 
-/* content__info */
+/* ----------------------------------
+    Content Info
+---------------------------------- */
 .content__info{
     margin: 64px 0 32px;
     padding: 48px 64px;
@@ -41,15 +52,26 @@
     margin: 16px 0;
 }
 
+.content__info__time,
+.content__info__phone-number{
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
 .content__info__text{
     font-family: 'Inter', sans-serif;
     letter-spacing: 1px;
     color: #FFFFFF;
     opacity: 0.6;
 }
+/* ----------------------------------
+    Content Info !!! END !!!
+---------------------------------- */
 
-
-/* content__form */
+/* ----------------------------------
+    Content Form
+---------------------------------- */
 .content__form{
     width: 100%;
     display: flex;
@@ -93,17 +115,24 @@
     width: 100%;
     text-align: center;
 }
+/* ----------------------------------
+    Content Form !!! END !!!
+---------------------------------- */
 
-
+/* ----------------------------------
+    MEDIA BREAKPOINTS
+---------------------------------- */
 @media screen and (max-width: 700px){
     .content__info{
         flex-direction: column;
     }
 }
-
 @media screen and (max-width: 350px){
     .content__header__title{
         font-size: 36px;
         line-height: 48px;
     }
 }
+/* ----------------------------------
+    MEDIA BREAKPOINTS !!! END !!!
+---------------------------------- */

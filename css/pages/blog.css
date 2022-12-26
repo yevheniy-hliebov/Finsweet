@@ -1,3 +1,8 @@
+@import url('../style.css');
+
+/* ----------------------------------
+    Featured Post
+---------------------------------- */
 .blog__featured__post{
     background-color: #F4F0F8;
     padding: 80px 0; 
@@ -46,17 +51,13 @@
     object-position: center;
     display: block;
 }
+/* ----------------------------------
+    Featured Post !!! END !!!
+---------------------------------- */
 
-.all-posts__main-title{
-    margin: 64px 0;
-    padding-bottom: 32px;
-    border-bottom: 1px solid #6D6E76;
-}
-
-/*---------------------- 
-    MEDIA-BREAKPOINTS 
-----------------------*/
-
+/* ----------------------------------
+    MEDIA BREAKPOINTS
+---------------------------------- */
 @media screen and (max-width: 768px){
     .blog__featured__post .container{
         flex-direction: column-reverse;
@@ -66,10 +67,6 @@
         width: 100%;
     }
 }
-
-@media screen and (max-width: 465px){
-    .featured__post__text-block__title{
-        font-size: 28px;
-        line-height: 36px;
-    }
-}
+/* ----------------------------------
+    MEDIA BREAKPOINTS !!! END !!!
+---------------------------------- */

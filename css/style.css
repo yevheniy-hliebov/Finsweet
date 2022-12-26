@@ -1,33 +1,46 @@
+@import url('./reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sen:wght@400;700&display=swap');
+@import url('./tmp/header.css');
+@import url('./tmp/footer.css');
 
+/* ----------------------------------
+    Main Selectors
+---------------------------------- */
 .container{
     max-width: 1740px;
     margin: 0 auto;
 }
 
 body{
-    font-family: 'Sen', sans-serif; 
-    min-height: 100vh;
     display:flex; 
     flex-direction:column;
+    min-height: 100vh;
+
+    font-family: 'Sen', sans-serif; 
     color: #232536;
 }
+
 body a{
     font-family: 'Sen', sans-serif; 
     color: #232536;
 }
 
-body.lock{
-    overflow: hidden;
-}
+body.lock{ overflow: hidden; }
 
+/* footer sticking to the bottom */
 main{ flex:1; }
 
+/* ----------------------------------
+    Main Selectors !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    Heading text and p
+---------------------------------- */
 h1, h2, h3, h4, h5, h6{
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: 0;
 }
-
 h1{
     font-size: 48px;
     line-height: 64px;
@@ -54,13 +67,20 @@ h6{
     line-height: 24px;
     letter-spacing: 3px;
 }
-
 p {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
 }
 
+/* ----------------------------------
+    Heading text and p !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    The same selectors 
+    in HEADER and FOOTER 
+---------------------------------- */
 .logo{
     height: 28px;
     width: auto;
@@ -70,9 +90,8 @@ p {
     float: left;
     margin-left: 24px; 
 }
-.navbar__item:first-child{
-    margin-left: 0;
-}
+
+.navbar__item:first-child{ margin-left: 0; }
 
 .navbar__link{
     font-family: 'Inter', sans-serif;
@@ -98,22 +117,30 @@ p {
 
     padding: 16px 48px;
 }
+/* ----------------------------------
+    The same selectors 
+    in HEADER and FOOTER 
+    !!! END !!!
+---------------------------------- */
 
+
+/* ----------------------------------
+    Buttons
+---------------------------------- */
 .btn--white{
     margin-left: 32px;
     background-color: #fff;
 }
-.btn--yellow{
-    background-color: #FFD050;
-}
+.btn--yellow{ background-color: #FFD050; }
+.btn--white:hover{ background-color: #F4F0F8; }
+.btn--yellow:hover{ background-color: #EDC14A; }
+/* ----------------------------------
+    Buttons !!! END !!!
+---------------------------------- */
 
-.btn--white:hover{
-    background-color: #F4F0F8;
-}
-.btn--yellow:hover{
-    background-color: #EDC14A;
-}
-
+/* ----------------------------------
+    Patten Line
+---------------------------------- */
 .pattern{
     position: absolute;
     bottom: 0;
@@ -133,15 +160,26 @@ p {
     border: 12px solid #592EA9;
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
+/* ----------------------------------
+    Patten Line !!! END !!!
+---------------------------------- */
 
+/* ----------------------------------
+    "join to team" Block
+---------------------------------- */
 .join-to-team{
     text-align: center;
     max-width: 450px;
     margin: 0 auto 128px;
 }
-
 .join-to-team__description{ margin: 16px 0 32px; }
+/* ----------------------------------
+    "join to team" Block !!! END !!!
+---------------------------------- */
 
+/* ----------------------------------
+    List Card Authors
+---------------------------------- */
 .list-authors{ margin: 128px 0; }
 
 .list-authors__title,
@@ -188,11 +226,32 @@ p {
 
 .list-author__card .contacts__links a{ margin-left: 16px; }
 
+@media screen and (max-width: 590px){
+    .list-authors__cards{
+        max-height: 500px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+/* ----------------------------------
+    List Card Authors !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    Post List
+---------------------------------- */
+.posts__main-title{
+    margin: 64px 0;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #6D6E76;
+    text-align: left;
+}
 .posts__list{
     width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 64px;
+    text-align: left;
 }
 
 .posts__item{
@@ -200,9 +259,7 @@ p {
     align-items: center;
     gap: 32px;
 }
-.posts__item:last-child{
-    margin-bottom: 0;
-}
+.posts__item:last-child{ margin-bottom: 0; }
 
 .posts__img{
     flex: 0 0 30%;
@@ -239,46 +296,45 @@ p {
 }
 .posts__title {
     margin: 20px 0 16px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: -2px;
 }
+/* ----------------------------------
+    Post List !!! END !!!
+---------------------------------- */
 
-.all-posts__links-pagination{
+/* ----------------------------------
+    Links Paginations !!! END !!!
+---------------------------------- */
+.links-pagination{
     margin: 64px 0;
     text-align: center;
 }
-.all-posts__links-pagination a{
+.links-pagination a{
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     color: #232536;
 }
-.all-posts__links-pagination a.links-pagination--lock{
+.links-pagination a.links-pagination--lock{
     color: #6D6E76;
 }
-.all-posts__links-pagination--prev{
+.links-pagination--prev{
     margin-right: 17px;
 }
 
-.all-posts__links-pagination--prev::before{
+.links-pagination--prev::before{
     content: '< ';
 }
-.all-posts__links-pagination--next::after{
+
+.links-pagination--next::after{
     content: ' >';
 }
+/* ----------------------------------
+    Links Paginations !!! END !!!
+---------------------------------- */
 
-
-@media screen and (max-width: 590px){
-    .list-authors__cards{
-        max-height: 500px;
-        overflow: hidden;
-        overflow-y: scroll;
-    }
-}
-
+/* ----------------------------------
+    List Category
+---------------------------------- */
 .list-category{
     margin-bottom: 128px;
 }
@@ -286,6 +342,7 @@ p {
 .list-category__cards__item{
     max-width: 296px;
 }
+
 .list-category__card{
     padding: 32px;
     text-align: left;
@@ -324,6 +381,9 @@ p {
     background-color: #FFD050;
     border: 1px solid #FFD050;
 }
+/* ----------------------------------
+    List Category !!! END !!!
+---------------------------------- */
 
 .link-name{
     color: #592EA9;
@@ -348,12 +408,10 @@ p {
 }
 @media screen and (max-width: 992px){
     .container{ max-width: 750px; }
+
+
     .posts__text{
         width: 600px;
-    }
-    .posts__title{
-        font-size: 28px;
-        line-height: 36px;
     }
 }
 @media screen and (max-width: 768px){
@@ -361,6 +419,8 @@ p {
         max-width: none;
         margin: 0 20px;
     }
+
+
     .posts__item {
         flex-direction: column;
     }
@@ -372,10 +432,80 @@ p {
     }
 }
 
-@media screen and (max-width: 465px){
-    .posts__img{ min-height: 250px; }
-    .posts__title{
+@media screen and (max-width: 600px){
+    /* ----------------------------------
+        Heading text and p
+    ---------------------------------- */
+    h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    h2{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    h3{
         font-size: 24px;
         line-height: 32px;
     }
+    h4{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    h5{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+    h6{
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 3px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    /* ----------------------------------
+        Heading text and p !!! END !!!
+    ---------------------------------- */
+}
+@media screen and (max-width: 465px){
+    .posts__img{ min-height: 250px; }
+}
+@media screen and (max-width: 375px){
+    /* ----------------------------------
+        Heading text and p
+    ---------------------------------- */
+    h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    h4{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    h5{
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    h6{
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 3px;
+    }
+    /* ----------------------------------
+        Heading text and p !!! END !!!
+    ---------------------------------- */
 }
