@@ -1,5 +1,5 @@
 @import url('./reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sen:wght@400;700&display=swap');
 @import url('./tmp/header.css');
 @import url('./tmp/footer.css');
 
@@ -9,6 +9,11 @@
 .container{
     max-width: 1740px;
     margin: 0 auto;
+}
+
+html,
+body{
+    height: 100%;
 }
 
 body{
@@ -107,16 +112,6 @@ p {
     padding: 3px 0 2px;
     border-bottom: 1px solid #EDC14A;
 }
-
-.btn{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #232536;
-    cursor: pointer;
-
-    padding: 16px 48px;
-}
 /* ----------------------------------
     The same selectors 
     in HEADER and FOOTER 
@@ -127,6 +122,16 @@ p {
 /* ----------------------------------
     Buttons
 ---------------------------------- */
+.btn{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #232536;
+    cursor: pointer;
+
+    padding: 16px 48px;
+}
 .btn--white{
     margin-left: 32px;
     background-color: #fff;
@@ -162,6 +167,53 @@ p {
 }
 /* ----------------------------------
     Patten Line !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    About-us Mision-Vision
+---------------------------------- */
+.about-us__mision-vision{
+    padding: 128px 108px 64px;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    position: relative;
+    top: -63px;
+    background-color: #F4F0F8;
+}
+.about-us__mision-vision--home{
+    padding: 96px 80px;
+    top: unset;
+}
+.mision-vision__title{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.mision-vision__sub-title{ 
+    letter-spacing: -1px;
+    margin: 24px 0 16px;
+}
+.about-us__mision-vision--home .mision-vision__description{
+    margin-bottom: 16px;
+}
+.mision-vision__link{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #592EA9;
+}
+
+.about-us__mision-vision--home .pattern{
+    bottom: unset;
+    left: unset;
+
+    z-index: 3;
+    top: -24px;
+    right: 0;
+    width: 80%;
+}
+/* ----------------------------------
+    About-us Mision-Vision !!! END !!!
 ---------------------------------- */
 
 /* ----------------------------------
@@ -390,7 +442,7 @@ p {
 }
 
 /*-------------------------------
-    BREAKPOINTS FOR CONTAINER 
+    MEDIA BREAKPOINTS
 -------------------------------*/
 @media screen and (max-width: 1740px){
     .container{ max-width: 1540px; }
@@ -413,6 +465,13 @@ p {
     .posts__text{
         width: 600px;
     }
+    .about-us__mision-vision{
+        top: -33px;
+        padding: 24px 32px;
+    }
+    .about-us__mision-vision--home{
+        top: unset;
+    }
 }
 @media screen and (max-width: 768px){
     .container{ 
@@ -420,7 +479,7 @@ p {
         margin: 0 20px;
     }
 
-
+    
     .posts__item {
         flex-direction: column;
     }
@@ -429,6 +488,10 @@ p {
     }
     .posts__text {
         width: 100%;
+    }
+    .about-us__mision-vision{
+        flex-direction: column;
+        padding: 24px 32px;
     }
 }
 

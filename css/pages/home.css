@@ -1,1 +1,192 @@
 @import url('../style.css');
+/* ----------------------------------
+    Home-Hero Block
+---------------------------------- */
+.home-hero {
+    width: 100%;
+    max-height: 720px;
+    position: relative;
+}
+.home-hero__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-hero__image img{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    filter: brightness(55%);
+}
+.home-hero__content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 805px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 128px 0 192px;
+
+    font-family: 'Inter';
+    color: #fff;
+}
+.home-hero__category {
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.home-hero__category a{
+    color: #fff;
+}
+.home-hero__title {
+    margin: 24px 0;
+}
+.home-hero__name-date {
+}
+.home-hero__name-date .link-name {
+    color: #FFD050;
+}
+.home-hero__desc {
+    margin: 16px 0 28px; 
+}
+.home-hero__content .btn{
+    max-width: 205px;
+}
+/* ----------------------------------
+    Home-Hero Block !!! END !!!
+---------------------------------- */
+
+/* ----------------------------------
+    Featured Posts
+---------------------------------- */
+.featured__posts {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+    margin-top: 128px;
+}
+.featured__posts__title {
+    margin-bottom: 32px;
+}
+.featured__post__block {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+
+    border: 1px solid rgba(109, 110, 118, 0.1);
+}
+.featured__post__image {
+    width: 100%;
+    height: 352px;
+
+    margin-bottom: 32px;
+}
+.featured__post__image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+.featured__post__title {
+    margin: 16px 0;
+}
+.featured__post .btn {
+    max-width: 205px;
+    margin-top: 32px;
+}
+
+/* All Posts */
+.all__posts {
+    max-width: 515px;
+}
+.all__posts__title-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    margin-bottom: 32px;
+}
+.all__posts__view-all {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #592EA9;
+}
+.all__posts__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.all__posts__item {
+    padding: 32px;
+    width: 100%;
+    position: relative;
+}
+.all__posts__link {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.all__posts__item:hover {
+    background-color: #FBF6EA;
+}
+.all__posts__item .link-name{
+    position: relative;
+    z-index: 2;
+}
+/* ----------------------------------
+    Featured Posts !!! END !!!
+---------------------------------- */
+
+.about-us__mision-vision--home{
+    margin: 128px 0;
+}
+
+/*-------------------------------
+    MEDIA BREAKPOINTS
+-------------------------------*/
+@media screen and (max-width: 1200px){
+    .featured__post__image {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 798px){
+    .featured__posts{
+        flex-direction: column;
+        align-items: center;
+    }
+    .featured__post__block{
+        width: 100%;
+        max-width: unset;
+    }
+    .all__posts__list{
+        row-gap: 5px;
+    }
+    .all__posts__item{
+        border: 1px solid rgba(109, 110, 118, 0.1);
+    }
+}
+@media screen and (max-width: 400px){
+    .featured__post__image {
+        height: 150px;
+    }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="./css/pages/home.css">
 
     <title>Finsweet</title>
 </head>
@@ -30,9 +30,193 @@
         </div>
     </header>
 
+    <!-- Home-Hero -->
+    <div class="home-hero">
+        <div class="container">
+            <div class="home-hero__image">
+                <img src="./img/home-hero-img.jpg" alt="home-hero-img">
+            </div>
+            <div class="home-hero__content">
+                <p class="home-hero__category">Posted on <a href="./pages/category.html">startup</a></p>
+                <h1 class="home-hero__title">Step-by-step guide to choosing great font pairs</h1>
+                <p class="home-hero__name-date">By <a href="./pages/author.html" class="link-name">Andrew Jonson</a>   |   May 23, 2022</p>
+                <p class="home-hero__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+
+                <a href="./pages/post.html" class="btn btn--yellow">Read More ></a>
+            </div>
+        </div>        
+    </div>
+
     <!-- MAIN -->
     <main class="main">
+        <div class="container">
+            <section class="featured__posts">
+                <div class="featured__post">
+                    <h2 class="featured__posts__title">Featured Post</h2>
+                    <div class="featured__post__block">
+                        <a href="./pages/post.html" class="featured__post__image">
+                            <img src="./img/posts-img/post-image-12.png" alt="posts-img">
+                        </a>
+                        <p class="featured__post__name-date">By <a href="./pages/author.html" class="link-name">Andrew Jonson</a>   |   May 23, 2022</p>
+                        <a href="./pages/post.html"><h3 class="featured__post__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3></a>
+                        <p class="featured__post__desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 
+                        <a href="./pages/post.html" class="btn btn--yellow">Read More ></a>
+                    </div>
+                </div>
+                <div class="all__posts">
+                    <div class="all__posts__title-link">
+                        <h2 class="all__posts__main-title">All Posts</h2>
+                        <a href="./pages/blog.html" class="all__posts__view-all">View All</a>
+                    </div>
+                    <ul class="all__posts__list">
+                        <li class="all__posts__item">
+                            <a href="./pages/post.html" class="all__posts__link"></a>
+                            <p class="featured__post__name-date">By <a href="./pages/author.html" class="link-name">Andrew Jonson</a>   |   May 23, 2022</p>
+                            <h4 class="all__posts__title">8 Figma design systems that you can download for free today.</h4>
+                        </li>
+                        <li class="all__posts__item">
+                            <a href="./pages/post.html" class="all__posts__link"></a>
+                            <p class="featured__post__name-date">By <a href="./pages/author.html" class="link-name">Andrew Jonson</a>   |   May 23, 2022</p>
+                            <h4 class="all__posts__title">8 Figma design systems that you can download for free today.</h4>
+                        </li>
+                        <li class="all__posts__item">
+                            <a href="./pages/post.html" class="all__posts__link"></a>
+                            <p class="featured__post__name-date">By <a href="./pages/author.html" class="link-name">Andrew Jonson</a>   |   May 23, 2022</p>
+                            <h4 class="all__posts__title">8 Figma design systems that you can download for free today.</h4>
+                        </li>
+                        <li class="all__posts__item">
+                            <a href="./pages/post.html" class="all__posts__link"></a>
+                            <p class="featured__post__name-date">By <a href="./pages/author.html" class="link-name">Andrew Jonson</a>   |   May 23, 2022</p>
+                            <h4 class="all__posts__title">8 Figma design systems that you can download for free today.</h4>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="about-us__mision-vision about-us__mision-vision--home">
+                <div class="pattern">
+                    <hr class="pattern__line--yellow">
+                    <hr class="pattern__line--purple">
+                </div>
+                <div class="mision-vision__item">
+                    <h6 class="mision-vision__title">about us</h6>
+                    <h3 class="mision-vision__sub-title">We are a community of content writers who share their learnings</h3>
+                    <p class="mision-vision__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+                    <a href="./pages/about-us.html" class="mision-vision__link">Read More ></a>
+                </div>
+                <div class="mision-vision__item">
+                    <h6 class="mision-vision__title">Our mision</h6>
+                    <h3 class="mision-vision__sub-title">Creating valuable content for creatives all around the world</h3>
+                    <p class="mision-vision__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+                </div>
+            </section>
+
+            <section class="list-category">
+                <div class="container">
+                    <h2 class="list-category__title">Choose A Catagory</h2>
+                    <ul class="list-category__cards">
+                        <li class="list-category__cards__item">
+                            <div class="list-category__card">
+                                <a href="./pages/category.html" class="list-category__link"></a>
+                                <div class="list-category__card__img"><img src="./img/category-icon/icon-business.svg" alt="category-img"></div>
+                                <h3 class="list-category__card__title">Business</h3>
+                                <p class="list-authors__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            </div>
+                        </li>
+                        <li class="list-category__cards__item">
+                            <div class="list-category__card">
+                                <a href="./pages/category.html" class="list-category__link"></a>
+                                <div class="list-category__card__img"><img src="./img/category-icon/icon-startup.svg" alt="category-img"></div>
+                                <h3 class="list-category__card__title">Startup</h3>
+                                <p class="list-authors__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            </div>
+                        </li>
+                        <li class="list-category__cards__item">
+                            <div class="list-category__card">
+                                <a href="./pages/category.html" class="list-category__link"></a>
+                                <div class="list-category__card__img"><img src="./img/category-icon/icon-economy.svg" alt="category-img"></div>
+                                <h3 class="list-category__card__title">Economy</h3>
+                                <p class="list-authors__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            </div>
+                        </li>
+                        <li class="list-category__cards__item">
+                            <div class="list-category__card">
+                                <a href="./pages/category.html" class="list-category__link"></a>
+                                <div class="list-category__card__img"><img src="./img/category-icon/icon-technology.svg" alt="category-img"></div>
+                                <h3 class="list-category__card__title">Technology</h3>
+                                <p class="list-authors__card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="list-authors">
+                <h2 class="list-authors__title">List of Authors</h2>
+
+                <ul class="list-authors__cards list-authors__cards--row-scroll">
+                    <li class="list-authors__cards__item">
+                        <div class="list-author__card">
+                            <a href=""  class="list-authors__card__img"><img src="./img/user-profile-img/author_2.png" alt=""></a>
+                            <h3 class="list-authors__card__name">Floyd Miles</h3>
+                            <p class="list-authors__card__description">Content Writer @Company</p>
+                            <div class="contacts__links">
+                                <a href=""><img src="./img/social-icons/icon-facebook-n.svg" alt="facebook" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-twitter-n.svg" alt="twitter" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-instagram-n.svg" alt="instagram" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-linkedin-n.svg" alt="linkedin" class="contacts__links--icon"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-authors__cards__item">
+                        <div class="list-author__card">
+                            <a href=""  class="list-authors__card__img"><img src="./img/user-profile-img/author_3.png" alt=""></a>
+                            <h3 class="list-authors__card__name">Dianne Russell</h3>
+                            <p class="list-authors__card__description">Content Writer @Company</p>
+                            <div class="contacts__links">
+                                <a href=""><img src="./img/social-icons/icon-facebook-n.svg" alt="facebook" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-twitter-n.svg" alt="twitter" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-instagram-n.svg" alt="instagram" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-linkedin-n.svg" alt="linkedin" class="contacts__links--icon"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-authors__cards__item">
+                        <div class="list-author__card">
+                            <a href=""  class="list-authors__card__img"><img src="./img/user-profile-img/author_4.png" alt=""></a>
+                            <h3 class="list-authors__card__name">Jenny Wilson</h3>
+                            <p class="list-authors__card__description">Content Writer @Company</p>
+                            <div class="contacts__links">
+                                <a href=""><img src="./img/social-icons/icon-facebook-n.svg" alt="facebook" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-twitter-n.svg" alt="twitter" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-instagram-n.svg" alt="instagram" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-linkedin-n.svg" alt="linkedin" class="contacts__links--icon"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-authors__cards__item">
+                        <div class="list-author__card">
+                            <a href=""  class="list-authors__card__img"><img src="./img/user-profile-img/author_5.png" alt=""></a>
+                            <h3 class="list-authors__card__name">Leslie Alexander</h3>
+                            <p class="list-authors__card__description">Content Writer @Company</p>
+                            <div class="contacts__links">
+                                <a href=""><img src="./img/social-icons/icon-facebook-n.svg" alt="facebook" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-twitter-n.svg" alt="twitter" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-instagram-n.svg" alt="instagram" class="contacts__links--icon"></a>
+                                <a href=""><img src="./img/social-icons/icon-linkedin-n.svg" alt="linkedin" class="contacts__links--icon"></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="join-to-team">
+                <h2 class="join-to-team__title">Join our team to be a part of our story</h2>
+                <p class="join-to-team__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <button class="btn btn--yellow">Join Now</button>
+            </div>
+        </div>
     </main>
 
     <!-- FOOTER -->

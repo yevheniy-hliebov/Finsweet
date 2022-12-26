@@ -87,31 +87,6 @@
 ---------------------------------- */
 
 /* ----------------------------------
-    About-us Mision-Vision
----------------------------------- */
-.about-us__mision-vision{
-    padding: 128px 108px 64px;
-    display: flex;
-    align-items: flex-start;
-    gap: 32px;
-    position: relative;
-    top: -63px;
-    background-color: #F4F0F8;
-}
-
-.mision-vision__title{
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-.mision-vision__sub-title{ 
-    letter-spacing: -1px;
-    margin: 24px 0 16px;
-}
-/* ----------------------------------
-    About-us Mision-Vision !!! END !!!
----------------------------------- */
-
-/* ----------------------------------
     About-us Histories
 ---------------------------------- */
 .about-us__histories__block {
@@ -196,10 +171,6 @@
         top: -33px;
     }
     .overview__statistic, .patter--overview { margin-left: 30px;}
-    .about-us__mision-vision{
-        top: -33px;
-        padding: 24px 32px;
-    }
 
     .about-us__histories__title{
         font-size: 28px;
@@ -217,10 +188,6 @@
         line-height: 48px;
     }
     .overview__statistic{
-        padding: 24px 32px;
-    }
-    .about-us__mision-vision{
-        flex-direction: column;
         padding: 24px 32px;
     }
     .about-us__histories__block{
