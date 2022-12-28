@@ -3,7 +3,7 @@
 ---------------------------------- */
 .header{
     position: relative;
-    z-index: 3;
+    z-index: 4;
     width: 100%;
     background-color: #232536;
 }
@@ -25,24 +25,52 @@
     display: none;
     position: relative;
     z-index: 3;
-}
-  
-.line1, .line2, .line3 {
+
     width: 24px;
-    height: 3px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.7s all ease;
+    height: 21px;
 }
   
-.change .line1 {
+.navbar__icon span,
+.navbar__icon::before,
+.navbar__icon::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transition: 0.5s all ease-in;
+    background-color: #fff;
+}
+
+.navbar__icon span{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar__icon::before,
+.navbar__icon::after {
+    content: '';
+}
+
+.navbar__icon::before{
+    top: 0;
+}
+
+.navbar__icon::after {
+    bottom: 0;
+}
+
+.navbar__icon--change::before {
     transform: translate(0, 9px) rotate(-45deg);
 }
 
-.change .line2 {opacity: 0;}
+.navbar__icon--change span {opacity: 0;}
   
-.change .line3 {
+.navbar__icon--change::after {
     transform: translate(0, -9px) rotate(45deg);
+}
+
+.navbar .btn{
+    margin-left: 32px;
 }
 /* ----------------------------------
     HEADER !!! END !!!
@@ -52,36 +80,44 @@
     MEDIA BREAKPOINTS !!! END !!!
 ---------------------------------- */
 @media screen and (max-width: 768px){
-    .btn--white{
+    .navbar .btn{
         display: none;
     }
 }
 @media screen and (max-width: 550px){
-    .header .navbar__body{
+    .header .navbar{
         position: fixed;
         top: 0;
-        right: 0;
+        width: 100%;
+        right: -100%;
         height: 100%;
-        width: 0;
         z-index: 2;
-        opacity: 0;
         visibility: hidden;
 
-        transition: 0.7s all ease;
+        transition: 0.5s all ease-in;
 
-        padding: 55px 0;
+        padding: 55px 15px;
         background-color: #0e0f16f5;
         text-align: center;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
-    .navbar__body.change{
-        width: 250px;
-        padding: 55px;
-        opacity: 1;
+    .header .navbar .btn{
+        margin: 32px 0 0;
+        display: block;
+
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .header .navbar--active{
+        right: 0;
         visibility: visible;
     }
     .header .navbar__link{
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 28px;
+        line-height: 36px;
     }
     .header .navbar__item{
         float: none;

@@ -61,15 +61,8 @@
     opacity: 0.7;
 }
 
-.contacts__links a{
-    margin-left: 26px;
-}
-.contacts__links a:first-child{
-    margin: 0;
-}
-.contacts__links--icon{
-    height: 16px;
-    width: auto;
+.contacts .contacts__links--icon{
+    fill: #6D6E76;
 }
 
 /*-------------------------------

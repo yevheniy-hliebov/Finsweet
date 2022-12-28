@@ -1,18 +1,35 @@
 let body = document.querySelector("body");
 let navBarIcon = document.querySelector(".header .navbar__icon");
-let navBarBody = document.querySelector(".header .navbar__body");
+let navBarBody = document.querySelector(".header .navbar");
+let navBarItems = document.querySelectorAll(".header .navbar *");
 
 if(navBarIcon != null && navBarBody != null){
     navBarIcon.addEventListener("click", function() {
-        navBarIcon.classList.toggle("change");
-        navBarBody.classList.toggle("change");
+        navBarIcon.classList.toggle("navbar__icon--change");
+        navBarBody.classList.toggle("navbar--active");
         body.classList.toggle("lock");
     });
 }
 
+if(navBarItems != null){
+    for (const Items of navBarItems) {
+        Items.addEventListener("click", function () {
+            if(navBarIcon.classList.contains("navbar__icon--change")){
+                navBarIcon.classList.remove("navbar__icon--change");
+                navBarBody.classList.remove("navbar--active");
+                if(body.classList.contains("lock")){
+                    body.classList.remove("lock");
+                }
+            }
+        });
+    }
+}
+
 let filterBtn = document.querySelector(".filter-btn");
 let filtersMenu = document.querySelector(".filters__menu");
+let filtersMenuItems = document.querySelectorAll(".filters__menu *");
 let filterCloseMenu = document.querySelector(".filter-close");
+
 if(filterBtn != null && filtersMenu != null){
     filterBtn.addEventListener("click", function() {
         filtersMenu.classList.toggle("filters__menu--active");
@@ -30,29 +47,16 @@ if(filterCloseMenu != null && filtersMenu != null){
     });
 }
 
-window.onclick = function(event) {
-    if(navBarIcon != null && navBarBody != null){
-        if(!event.target.navBarIcon && !event.target.matches(".line1") && !event.target.matches(".line2") && !event.target.matches(".line3") && navBarIcon.classList.contains("change")){
-            if(!event.target.matches(".header .navbar__body.change")){
-                navBarIcon.classList.remove("change");
-                navBarBody.classList.remove("change");
-                if(body.classList.contains("lock")){
-                    body.classList.toggle("lock");
-                }
+if(filtersMenuItems != null){
+    for (const Items of filtersMenuItems) {
+        Items.addEventListener("click", function () {
+            console.log(1);
+            if(filtersMenu.classList.contains("filters__menu--active")){
+                filtersMenu.classList.remove("filters__menu--active");
             }
-        }
-    }
-
-    if(filterBtn != null && filterCloseMenu != null && filtersMenu != null){
-        if(!event.target.matches(".filter-btn") && !event.target.matches(".line1") && !event.target.matches(".line3") && filtersMenu.classList.contains("filters__menu--active")){
-            if(!event.target.matches(".filters__menu--active")){
-                if(filtersMenu.classList.contains("filters__menu--active")){
-                    filtersMenu.classList.remove("filters__menu--active");
-                }
-                if(body.classList.contains("lock")){
-                    body.classList.remove("lock");
-                }
+            if(body.classList.contains("lock")){
+                body.classList.remove("lock");
             }
-        }
+        });
     }
 }

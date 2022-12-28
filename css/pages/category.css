@@ -148,23 +148,45 @@
     display: none;
     text-align: right;
 }
+
 .filter-btn{
     margin: 24px 0 24px auto;
 }
 
-.filter-close{
-    display: none;
+.filter-close {
+    display: inline-block;
+    cursor: pointer;
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 30px;
+    right: 20px;
+    z-index: 3;
+
+    visibility: hidden;
+    overflow: 0;
+
+    width: 24px;
+    height: 21px;
 }
 
-.filter-close .line1{
-    transform: translate(0, 4.5px) rotate(-45deg);
+.filter-close::before,
+.filter-close::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transition: 0.5s all ease-in;
+    background-color: #fff;
 }
 
-.filter-close .line3 {
-    transform: translate(0, -4.5px) rotate(45deg);
+
+.filter-close::before{
+    top: 0;
+    transform: translate(0, 9px) rotate(-45deg);
+}
+.filter-close::after {
+    bottom: 0;
+    transform: translate(0, -9px) rotate(45deg);
 }
 
 /* ----------------------------------
@@ -175,30 +197,49 @@
     MEDIA BREAKPOINTS
 ---------------------------------- */
 @media screen and (max-width: 992px) {
+    .filter-btn__wraper{ display: block; }
     .filters__menu{ 
         position: fixed;
         top: 0;
-        right: 0;
+        max-width: unset;
+        width: 100%;
+        right: -100%;
         height: 100%;
         z-index: 5;
-        opacity: 0;
         visibility: hidden;
         overflow-y: scroll;
 
-        transition: 0.7s min-width ease;
+        transition: 0.5s all ease-in;
 
         padding: 55px 15px;
         background-color: #0e0f16f5;
+
+        align-items: center;
         text-align: center;
     }
     .filters__menu--active{
-        opacity: 1;
+        right: 0;
         visibility: visible;
     }
     .filters__menu--active .filter-close{
-        display: block;
+        visibility: visible;
+        opacity: 1;
     }
-    .filter-btn__wraper{ display: block; }
+    
+    .block__filter__link,
+    .filters__tags__list{
+        max-width: 300px;
+    }
+    
+    .filters__title{
+        color: #fff;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .filters__tags__link {
+        opacity: 1;
+    }
 }
 /* ----------------------------------
     MEDIA BREAKPOINTS !!! END !!!
